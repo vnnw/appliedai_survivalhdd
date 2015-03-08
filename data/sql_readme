@@ -8,6 +8,8 @@ Then use these commands to reproduce the results:
     $ sqlite3 drive_stats.db
     sqlite> .read create_table.sql
     sqlite> .read import.sql
+    sqlite> .read import2013.sql
     sqlite> .read stats.sql
+    sqlite> .read prepare_survival.sql
     sqlite> .mode columns
     sqlite> select * from failure_rates order by model;
