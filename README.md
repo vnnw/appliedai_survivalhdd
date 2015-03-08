@@ -55,7 +55,7 @@ Using Anaconda distro,
 
 ### Initial load and local database creation
 
-Read `sql_readme` in `data/docs` directory
+Execute instructions as per `sql_readme` in `data/docs` directory
 
 
 
