@@ -6,10 +6,11 @@ create table drive_survival as
     select serial_number as diskid
             ,model as model
             ,capacity_bytes as capacitybytes
-            ,min(date) as startdate
-            ,max(date) as enddate
+            ,min(date) as mindate
+            ,max(date) as maxdate
             ,count(date) as nrecords
-            ,max(smart_9_raw) - min(smart_9_raw) as nhoursinserviceduringstudy
+            ,min(smart_9_raw) as minhours
+            ,max(smart_9_raw)  as maxhours
             ,sum(failure) as failed
     from drive_stats
     group by serial_number, model, capacity_bytes;
