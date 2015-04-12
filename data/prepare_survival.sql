@@ -1,3 +1,5 @@
+## prepare_survival.sql
+
 .echo on
 
 drop table if exists drive_survival;
